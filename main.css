@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -35,7 +36,7 @@ aside h2 {
   margin-bottom: 10px;
 }
 
-aside .settings {
+aside {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -45,10 +46,7 @@ aside .settings {
   border-radius: 10px;
 }
 
-aside .settings .figures-checked,
-aside .settings .perspective,
-aside .settings .rotates,
-aside .settings .speed {
+aside .setting {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -56,23 +54,21 @@ aside .settings .speed {
   background-color: hsla(0, 0%, 100%, 0.5);
 }
 
-.wrap-input {
+aside .setting .wrap-input {
   display: flex;
+  align-items: center;
   margin-bottom: 10px;
 }
 
-.wrap-input label {
+aside .setting .wrap-input label {
   width: 100%;
   font-size: 1.5rem;
 }
 
-.figures-checked .wrap-input label {
+aside .figures-checked .wrap-input label {
   padding-left: 5px;
 }
 
-aside .settings .setting:not(.figures-checked) .wrap-input label {
+aside .setting:not(.figures-checked) .wrap-input label {
   padding-right: 5px;
-}
-
-aside .settings .figures-checked {
 }
