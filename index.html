@@ -7,5 +7,50 @@
     <title>CSS 3D</title>
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="wrap">
+      <main></main>
+      <aside>
+        <div class="settings">
+          <div class="setting figures-checked">
+            <h2>Figury:</h2>
+            <div class="wrap-input">
+              <input type="radio" name="figures" id="cube" checked />
+              <label for="cube">Cube</label>
+            </div>
+            <div class="wrap-input">
+              <input type="radio" name="figures" id="star" />
+              <label for="star">Star</label>
+            </div>
+            <div class="wrap-input">
+              <input type="radio" name="figures" id="diamond" />
+              <label for="diamond">Diamond</label>
+            </div>
+          </div>
+          <div class="setting perspective">
+            <h2>Perspektywa:</h2>
+            <input type="range" />
+          </div>
+          <div class="setting rotates">
+            <h2>Obracanie:</h2>
+            <div class="wrap-input">
+              <label for="x">X:</label>
+              <input type="range" id="x" />
+            </div>
+            <div class="wrap-input">
+              <label for="y">Y:</label> <input type="range" id="y" />
+            </div>
+            <div class="wrap-input">
+              <label for="z">Z:</label>
+              <input type="range" id="z" />
+            </div>
+          </div>
+          <div class="setting speed">
+            <h2>Prędkość:</h2>
+            <input type="range" />
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
 </html>
